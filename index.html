@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css" type="text/css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="innerbox">
+            <div id="display">
+                <h1 id="result">CALCULATOR</h1>
+            </div>
+            <div id="keypad">
+                <table id="table">
+                    <tbody>
+                        <tr>
+                            <td><button onclick="AC()">AC</button></td>
+                            <td></td>
+                            <td><button onclick="del()">DEL</button></td>
+                            <td><button onclick="clickingOpt('%')">%</button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="clickingNum(7)">7</button></td>
+                            <td><button onclick="clickingNum(8)">8</button></td>
+                            <td><button onclick="clickingNum(9)">9</button></td>
+                            <td><button onclick="clickingOpt('+')">+</button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="clickingNum(4)">4</button></td>
+                            <td><button onclick="clickingNum(5)">5</button></td>
+                            <td><button onclick="clickingNum(6)">6</button></td>
+                            <td><button onclick="clickingOpt('-')">-</button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="clickingNum(1)">1</button></td>
+                            <td><button onclick="clickingNum(2)">2</button></td>
+                            <td><button onclick="clickingNum(3)">3</button></td>
+                            <td><button onclick="clickingOpt('x')">x</button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="dot()">.</button></td>
+                            <td><button onclick="clickingNum(0)">0</button></td>
+                            <td><button onclick="getAns()">=</button></td>
+                            <td><button onclick="clickingOpt('/')">/</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
